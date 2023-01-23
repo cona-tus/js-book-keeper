@@ -1,0 +1,21 @@
+:root {
+  /* color */
+  --color-black: #2a2828;
+  --color-gray: rgba(0, 0, 0, 0.5);
+  --color-light-gray: #ececeb;
+  --color-white: #ffffff;
+  --color-red: #bc4133;
+  --color-dark-blue: #2e4757;
+  --color-blue: #1a6e74;
+  --color-bg: #722a22;
+
+  /* font-size */
+  --font-large: 2.25rem;
+  --font-medium: 1rem;
+  --font-regular: 0.875rem;
+
+  /* font-weight */
+  --weight-bold: 700;
+  --weight-medium: 500;
+  --weight-regular: 400;
+}

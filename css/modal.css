@@ -1,0 +1,90 @@
+/* Modal */
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-gray);
+  z-index: 2;
+}
+
+.show-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 450px;
+  max-width: 90%;
+  background-color: var(--color-white);
+  overflow: hidden;
+  animation: modalOpen 0.5s ease-in-out;
+}
+
+.modal-header {
+  padding: 2rem 3rem;
+  background-color: var(--color-dark-blue);
+}
+
+.modal-title {
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-medium);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-medium);
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-light-gray);
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.close-button {
+  background-color: var(--color-red);
+}
+
+.save-button {
+  background-color: var(--color-blue);
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
