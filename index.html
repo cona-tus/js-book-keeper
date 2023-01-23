@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Keeper</title>
+    <link rel="icon" type="image/ico" href="./favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <!-- Bookmark Container -->
+    <div id="container" class="container">
+        <header class="header">
+            <h1 class="title">Book Keeper</h1>
+            <p class="description">Save your favorite Website</p>
+        </header>
+        <h2 id="entry-text" class="entry-text">Click the button below to add a bookmark</h2>
+        <ul id="bookmarks-container" class="bookmarks-container">
+        </ul>
+        <footer class="footer">
+            <button id="remove-button" class="remove-button btn">Remove All</button>
+            <button id="show-modal" class="show-button btn">Create</button>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div id="modal-container" class="modal-container">
+        <section class="modal">
+            <header class="modal-header">
+                <h2 class="modal-title">
+                    Add Bookmark
+                </h2>
+            </header>
+            <form id="modal-form" class="modal-form">
+                <div class="form-group">
+                    <label class="form-label" for="website-name">Website Name</label>
+                    <input id="website-name" class="form-input" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="website-name">Website URL</label>
+                    <input id="website-url" class="form-input" type="text" />
+                </div>
+                <div class="button-container">
+                    <button id="close-modal" class="close-button btn" type="button">Cancle</button>
+                    <button id="save-item" class="save-button btn" type="submit">Save</button>
+            </form>
+    </div>
+    </section>
+    </div>
+    </div>
+</body>
+
+</html>
