@@ -49,7 +49,7 @@ function buildBookmarks() {
     const favicon = document.createElement('img');
     setAttribute(favicon, {
       src: `https://s2.googleusercontent.com/s2/favicons?domain=${url}`,
-      alt: favicon,
+      alt: 'favicon',
     });
 
     mark.appendChild(favicon);
